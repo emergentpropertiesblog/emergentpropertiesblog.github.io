@@ -1,0 +1,141 @@
+/* Style the footnote reference numbers */
+sup[id^="fnref"] {
+    margin: 0 2px;
+}
+
+sup[id^="fnref"] a {
+    text-decoration: none;
+    color: #353535;
+    cursor: pointer;
+    padding: 0 3px;
+    background-color: #AFD2E9;
+    border-radius: 3px;
+}
+
+sup[id^="fnref"] a:hover {
+    background-color: #9BC3DE;
+}
+
+.footnote-popup {
+    display: none;
+    position: absolute;
+    background: #AFD2E9;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(175, 210, 233, 0.3);
+    z-index: 1000;
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #1a1a1a;
+}
+
+.footnote-popup p {
+    margin: 0 0 12px 0;
+}
+
+.footnote-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footnote-author-image {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footnote-author-name {
+    font-size: 0.85em;
+    color: #1a1a1a;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footnote-author-name:hover {
+    text-decoration: underline;
+}
+
+/* Hide the original footnotes section at the bottom */
+.footnotes {
+    display: none;
+}
+
+/* Hide the reversefootnote link in popups */
+.reversefootnote {
+    display: none;
+}
+
+/* Bold text styling */
+strong, b {
+    color: #DB4C40;
+    font-weight: 600;
+}
+
+/* Post Summary Styles */
+.post-summary {
+    position: relative;
+    background: #1a1a1a;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    border-radius: 12px;
+    padding: 35px 40px;
+    margin: 30px 0 40px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Override bold text color in dark summary block */
+.post-summary strong,
+.post-summary b {
+    color: #FF6B5E;  /* Slightly lighter version of #DB4C40 for dark background */
+}
+
+.summary-content {
+    font-size: 1.15em;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.92);
+    margin: 0;
+    position: relative;
+    font-weight: 300;
+    letter-spacing: -0.011em;
+}
+
+.summary-attribution {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.attribution-dash {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 200;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+.attribution-author {
+    display: flex;
+    align-items: center;
+}
+
+.summary-author-name {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.summary-author-name:hover {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+} 

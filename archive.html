@@ -1,0 +1,25 @@
+---
+layout: default
+title: All posts
+---
+
+<div class="archive">
+  <div class="archive-header">
+    <h1 class="archive-header-title">{{ page.title }}</h1>
+    <div class="archive-header-line"></div>
+  </div>
+  {% for post in site.posts %}
+    <a href="{{ post.url | prepend: site.baseurl }}" class="archive-item">
+      <div class="archive-item-container"> <!-- Flexbox for alignment -->
+        <div class="archive-content"> <!-- Right-aligned container for title and description -->
+          <span class="archive-post-title">{{ post.title }}</span>
+          <span class="archive-post-p">{{ post.topline | strip_html | truncatewords: 25 }}</span> <!-- Adjust the truncatewords value for a very short description -->
+        </div>
+        <time datetime="{{ post.date }}" class="archive-post-time">
+          {{ post.date | date: "%B %d" }}<br>
+          {{ post.date | date: "%Y" }}
+        </time>
+      </div>
+    </a>
+  {% endfor %}
+</div>

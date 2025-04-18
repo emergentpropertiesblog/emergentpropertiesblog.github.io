@@ -1,0 +1,296 @@
+// Custom styles for Emergent Properties blog
+
+// Global link styles
+a {
+    color: #DB4C40 !important;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: darken(#DB4C40, 10%) !important;
+    }
+}
+
+// Citation styles
+[id^="ref"] {
+    color: $default-shade;
+
+    a {
+        color: #DB4C40 !important;
+        text-decoration: none;
+        
+        &::before {
+            content: "[";
+            color: #DB4C40;
+        }
+        
+        &::after {
+            content: "]";
+            color: #DB4C40;
+        }
+    }
+}
+
+// Footnote styles
+a[href^="#fn:"].footnote {
+    text-decoration: none !important;
+    color: #000 !important;
+    cursor: pointer;
+    background-color: #D4CBB3;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    transition: background-color 0.2s ease;
+    display: inline-block;
+
+    &:hover {
+        background-color: darken(#D4CBB3, 10%) !important;
+        color: #000 !important;
+        text-decoration: none !important;
+    }
+}
+
+.footnote-popup {
+    background-color: #D4CBB3 !important;
+    color: #000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: auto;
+
+    &.show {
+        display: block;
+        opacity: 1;
+    }
+
+    .footnote-content {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .author-info {
+        margin-top: 15px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        font-style: italic;
+        text-align: right;
+
+        span {
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: #000;
+        }
+    }
+}
+
+// Hide the footnotes section and back links
+.footnotes {
+    display: none !important;
+}
+
+.reversefootnote {
+    display: none !important;
+}
+
+.highlight-text {
+    background-color: #db4d4038;  // light red with 10% opacity
+    padding: 2px 0;  // optional: adds some vertical padding
+    font-weight: bold;
+
+    &:hover {
+        background-color: #db4d405e;
+    }
+  }
+
+// Post summary styles
+.post-summary {
+    background-color: #2f3437;
+    color: #ffffff !important;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+    p {
+        margin: 0;
+        line-height: 1.7;
+        font-size: 1.05rem;
+        font-weight: 300;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+    }
+} 
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 2px $default-shade;
+    
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+}
+
+// Mobile styles
+@media screen and (max-width: 768px) {
+    .homepage {
+        min-height: auto; // Remove fixed height on mobile
+        height: auto;
+    }
+
+    .nav .nav-container a .logo {
+        width: 90px !important;
+        height: 90px !important;
+        margin-top: 0.75rem !important;
+        margin-right: 0.75rem !important;
+    }
+}
+
+.homepage {
+    flex-direction: column;
+    min-height: 100vh; // Changed from height to min-height
+  
+    .top-half {
+      height: 250px;
+      max-width: $main-width + $sidebar-width;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2px;
+
+        .blog-title {
+            font-size: 2.5rem; // Adjust as needed
+            margin: 0;
+            color: $default-shade;
+            text-align: left;
+            max-width: 300px;
+            line-height: 2.5rem;
+          }
+    
+          .logo {
+            margin: 20px auto 1.2rem auto;
+            display: block;
+            margin-right: 25px;
+          }
+      }
+  
+      .blog-summary {
+        font-size: 1.2rem; // Adjust as needed
+        max-width: 750px; // Limit width for readability
+        margin: 0 auto; // Center the summary
+        margin-top: 0.45rem;
+      }
+    }
+  
+    .bottom-half {
+      flex: 1; // Takes up the remaining height
+      display: flex;
+      position: relative;
+      margin-top: 1px;
+  
+      .homepage-nav {
+        position: sticky;
+        top: 1px;
+        left: 0;
+        z-index: 1000;
+        box-shadow: 2px 0 2px -2px rgba(0,0,0,.2);
+        background: #fff;
+        width: $sidebar-width;
+        max-height: calc(100vh - 40px);
+        overflow-y: auto;
+      
+        &-container {
+          width: 100%;
+          height: auto;
+          padding: 2rem 1.5rem;
+          display: flex;
+          flex-direction: column;
+        }
+      
+        // Navigation wrapper
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          position: relative;
+          gap: 1rem;
+        }
+      
+        li {
+          margin: 0;
+          padding: 0;
+          width: auto;
+          
+          a {
+            color: $default-shade;
+            font-family: $sans-serif;
+            font-size: 1.15rem;
+            text-decoration: none;
+            opacity: 1;
+            display: block;
+            white-space: nowrap;
+            transition: opacity 0.2s ease;
+      
+            &:hover,
+            &:focus {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+.author-role {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: $default-shade;
+    opacity: 0.8;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .bio-content {
+        margin-bottom: 0px;
+    }
+
+    .bio-credit {
+        font-size: 0.85rem;
+        font-style: italic;
+        color: $default-shade;
+        opacity: 0.7;
+        align-self: flex-end;
+    }
+}

@@ -1,0 +1,7 @@
+{% assign author = include.author %}
+{% assign content = include.content %}
+{% assign id = include.id %}
+
+<div class="footnote-content" id="content-fn:{{ id }}" data-author="{{ author }}" style="display: none;">
+    {{ content }}
+</div> 

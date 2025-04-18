@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+    {% include author_data.html %}
+    
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="{{ site.baseurl }}/">
+          <img src="{{ '/assets/images/logored.png' | relative_url }}" alt="Logo" class="logo" style="width: 80px; height: 80px; float: right; margin: 0px 0px 10px 0px;"> <!-- Update the path to your logo -->
+          <h2 class="nav-title">{{ site.title }}</h2>
+        </a>
+        <ul>
+          <li><a href="{{ '/archive' | prepend: site.baseurl }}/">All posts</a></li>
+          <li><a href="{{ '/tags' | prepend: site.baseurl }}">Tags</a></li>
+          <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+          <li><a href="{{ '/contact' | prepend: site.baseurl }}">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      {{ content }}
+
+      {% include footer.html %}
+    </main>
+  
+  </body>
+</html> 

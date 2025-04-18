@@ -1,0 +1,359 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// First import tale variables and base
+@import "tale/variables";
+@import "tale/base";
+
+// Then import our typography styles to override
+@import "typography";
+@import "archive";
+@import "post";
+
+// Import remaining tale styles
+@import "tale/code";
+@import "tale/post";
+@import "tale/syntax";
+@import "tale/layout";
+@import "tale/pagination";
+@import "tale/catalogue";
+@import "tale/404";
+@import "tale/tags";
+
+// Import custom styles
+@import "custom";
+@import "about";
+
+// Navigation styles
+.nav {
+  box-shadow: 2px 0 2px -2px rgba(0,0,0,.2);
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: $sidebar-width;
+  display: flex;
+  flex-direction: column;
+
+  &-container {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-title {
+    color: $default-shade;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0;  // Reset margin
+    padding: 0;
+    text-decoration: none;
+    text-align: right;
+  }
+
+  // Navigation wrapper
+  &-nav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    top: 2rem;
+    gap: 1rem;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    
+    a {
+      color: $default-shade;
+      font-family: $sans-serif;
+      font-size: 1.15rem;
+      text-decoration: none;
+      opacity: 1;
+      display: block;
+      white-space: nowrap;
+      transition: opacity 0.2s ease;
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// Adjust main content to account for sidebar
+main {
+  margin-left: $sidebar-width;  // Same as sidebar width
+  width: calc(100% - #{$sidebar-width});
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+// Mobile styles
+@media screen and (max-width: 768px) {
+  .homepage {
+    display: flex;
+    flex-direction: column;
+
+    .homepage-nav {
+      position: relative;
+      width: 100%;
+      box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+      order: -1; // Move to top
+      
+      &-container {
+        padding: 1rem;
+      }
+      
+      ul {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        margin: 0;
+        
+        li a {
+          font-size: 1rem;
+          padding: 0.5rem 0;
+        }
+      }
+    }
+
+    .top-half {
+      height: auto;
+      padding: 2rem 1rem 1rem;
+      box-shadow: none;
+      
+      .header-content {
+        flex-direction: row;
+        text-align: left;
+        margin-bottom: 0;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+
+        .blog-title {
+          font-size: 2.75rem;
+          text-align: left;
+          max-width: 200px;
+          margin: 0;
+          line-height: 1.1;
+        }
+
+        .logo {
+          margin: 0;
+          width: 110px;
+          height: 110px;
+        }
+      }
+
+      .blog-summary {
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0 1rem;
+        margin-top: 2rem;
+      }
+    }
+
+    .bottom-half {
+      margin-top: 0;
+    }
+  }
+
+  .nav {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+      
+      .nav-container {
+          display: flex;      
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          min-height: 160px;
+          padding: 0.5rem 1.2rem;
+          padding-top: 0;
+          margin-top: 0.5rem;
+          margin-bottom: 0rem;
+
+          a {
+              display: flex;
+              align-items: center;
+              text-decoration: none;
+              height: 100%;
+
+              .nav-title {
+                  font-size: 2rem;
+                  text-align: left;
+                  line-height: 1.1;
+                  max-width: 150px;
+                  margin-left: 0.25rem;
+                  margin-top: 0px;
+              }
+          }
+
+          ul {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              justify-content: center;
+              height: 100%;
+              margin: 0;
+              padding: 0;
+              position: relative;
+              top: 0;  // Remove top offset
+              gap: 0.8rem;  // Slightly tighter gap
+
+              li {
+                  padding: auto 0;
+                  
+                  a {
+                      font-size: 1.05rem;  // Slightly smaller font
+                      line-height: 1;
+                      height: auto;
+                      padding: 2px 0;
+                  }
+              }
+          }
+      }
+  }
+
+  // Content font size adjustments for mobile
+  main {
+      padding: 1rem;
+      padding-top: 0rem;
+      margin-left: 0;
+      width: 100%;
+      
+      p, li {
+          font-size: 0.95rem;
+          line-height: 1.6;
+          width: auto;
+      }
+
+      h1 {
+          font-size: 1.6rem;
+      }
+
+      h2 {
+          font-size: 1.4rem;
+      }
+
+      h3 {
+          font-size: 1.2rem;
+      }
+
+      .post-title {
+          font-size: 2.2rem;
+          margin-top: 0.5rem;  // Reduce top margin of post title
+      }
+
+      .archive-header-title {
+          font-size: 2.2rem;
+          margin-top: 0.5rem;  // Reduce top margin of archive title
+      }
+
+      .tags-header-title {
+          font-size: 2.2rem;
+          margin-top: 0.5rem;  // Reduce top margin of tags title
+      }
+
+      .post-info {
+          margin-top: -1rem;
+          font-size: 0.9rem;
+      }
+
+      blockquote {
+          font-size: 0.95rem;
+          margin: 1rem 0;
+          padding-left: 1rem;
+      }
+
+      .footnote {
+          font-size: 0.85rem;
+      }
+  }
+
+  // Adjust post summary for mobile
+  .post-summary {
+      p {
+          font-size: 0.95rem;
+      }
+  }
+}
+
+// Catalogue styles
+.catalogue {
+  &-item {
+    border-bottom: 1px solid rgba(0,0,0,.07);
+    color: $default-color;
+    display: block;
+    padding: 1.5rem 0;  // Reduced padding
+
+    &:hover .catalogue-line,
+    &:focus .catalogue-line {
+      width: 15rem;
+    }
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  &-time {
+    color: $default-tint;
+    font-family: $sans-serif;
+    font-size: 0.85rem;  // Reduced
+    letter-spacing: .5px;
+  }
+
+  &-title {
+    color: $default-shade;
+    display: block;
+    font-family: $sans-serif;
+    font-size: 1.6rem;  // Reduced
+    font-weight: 700;
+    margin: .5rem 0;
+  }
+
+  &-line {
+    @include transition(all .3s ease-out);
+    border-top: .2rem solid $default-shade;
+    display: block;
+    width: 6rem;
+  }
+
+  p {
+    font-size: 1rem;  // Reduced
+    line-height: 1.5;
+    margin: .5rem 0;
+    color: $default-color;
+  }
+} 

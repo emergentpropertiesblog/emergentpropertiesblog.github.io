@@ -1,0 +1,20 @@
+{% assign author_key = include.author | downcase | replace: ' ', '_' %}
+{% assign author_data = site.data.authors[author_key] %}
+{% if author_data %}
+    {% assign author_name = author_data.name %}
+    {% assign author_image = author_data.image %}
+{% else %}
+    {% assign author_name = include.author %}
+    {% assign author_image = "Profile_avatar_placeholder_large.png" %}
+{% endif %}
+
+{% if include.return == "image" %}
+    {{ author_image }}
+{% elsif include.return == "name" %}
+    {{ author_name }}
+{% else %}
+    {
+        "name": "{{ author_name }}",
+        "image": "{{ author_image }}"
+    }
+{% endif %} 

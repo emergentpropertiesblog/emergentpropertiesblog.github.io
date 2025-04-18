@@ -1,0 +1,9 @@
+{% assign author = include.author %}
+{% assign content = include.content %}
+
+<div class="post-summary">
+    <p>{{ content }}</p>
+    <div class="summary-author">
+        — <a href="/about#{{ author | downcase | replace: ' ', '-' | replace: '.', '' }}" class="summary-author-link">{{ author }}</a>
+    </div>
+</div> 

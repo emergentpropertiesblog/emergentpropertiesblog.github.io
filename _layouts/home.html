@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include author_data.html %}
+
+    <div class="homepage">
+      <div class="top-half">    
+        <div class="header-content">
+          <img src="{{ '/assets/images/logored.png' | relative_url }}" alt="Logo" class="logo"> <!-- Update the path to your logo -->
+          <h1 class="blog-title">{{ site.title }}</h1>
+        </div>
+        <p class="blog-summary">Welcome! We seek to have broad scientific discussions that transcend individual fields and create interesting perspectives. See our <a href="{{ '/2025/03/06/emergent-properties' | prepend: site.baseurl }}">first post</a> to learn more about our goals.</p>
+      </div>
+    
+      <div class="bottom-half">
+        <nav class="homepage-nav">
+          <div class="homepage-nav-container">
+            <ul>
+              <li><a href="{{ '/archive' | prepend: site.baseurl }}/">All posts</a></li>
+              <li><a href="{{ '/tags' | prepend: site.baseurl }}">Tags</a></li>
+              <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+              <li><a href="{{ '/contact' | prepend: site.baseurl }}">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <main style="margin-left: 0 !important; width: 100% !important;">
+          <div class="catalogue" style="margin-top: -20px;">
+            {% for post in site.posts %}
+              {% if post.sticky %}
+                {% include catalogue_item.html sticky='true' %}
+              {% endif %}
+            {% endfor %}
+          
+            {% for post in paginator.posts %}
+              <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+                <div>
+                  <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
+                  <h1 class="catalogue-title">{{ post.title }}</h1>
+                  <div class="catalogue-line"></div>
+          
+                  <p>
+                    {{ post.description | strip_html | truncatewords: 600 }}
+                  </p>
+                </div>
+              </a>
+            {% endfor %}
+          </div>
+          
+          <div class="pagination">
+            {% if paginator.previous_page %}
+              <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+            {% endif %}
+            {% if paginator.next_page %}
+              <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+            {% endif %}
+          
+            <span>{{ paginator.page }}</span>
+          </div>
+
+
+          {% include footer.html %}
+        </main>
+      
+      </div>
+      
+
+    </div>
+  </body>
+  </html> 

@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="homepage">
+  <div class="top-half">    
+    <h1 class="blog-title">{{ site.title }}</h1>
+    <img src="{{ '/assets/images/Profile_avatar_placeholder_large.png' | relative_url }}" alt="Logo" class="logo"> <!-- Update the path to your logo -->
+    <p class="blog-summary">Welcome to our blog! Here, we explore various topics related to biology, evolution, and more. Join us on this journey of discovery!</p>
+  </div>
+
+  <div class="bottom-half">
+    <div class="catalogue">
+      {% for post in site.posts %}
+        {% if post.sticky %}
+          {% include catalogue_item.html sticky='true' %}
+        {% endif %}
+      {% endfor %}
+    
+      {% for post in paginator.posts %}
+        <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+          <div>
+            <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
+            <h1 class="catalogue-title">{{ post.title }}</h1>
+            <div class="catalogue-line"></div>
+    
+            <p>
+              {{ post.description | strip_html | truncatewords: 600 }}
+            </p>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+    
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+      {% endif %}
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+      {% endif %}
+    
+      <span>{{ paginator.page }}</span>
+    </div>
+  </div>
+</div>

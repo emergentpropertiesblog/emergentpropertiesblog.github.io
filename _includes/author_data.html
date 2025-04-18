@@ -1,0 +1,12 @@
+<script>
+window.siteAuthors = {
+    {% for author in site.data.authors %}
+    "{{ author[0] }}": {
+        name: "{{ author[1].name }}",
+        image: "{{ author[1].image }}",
+        bio: "{{ author[1].bio }}",
+        role: "{{ author[1].role }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+};
+</script> 

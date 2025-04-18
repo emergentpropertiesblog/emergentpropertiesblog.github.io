@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+<div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    {% assign authors = page.author | split: ", " %}
+    {% for author_name in authors %}
+        {% assign author_key = "" %}
+        {% for author_entry in site.data.authors %}
+            {% if author_entry[1].name == author_name %}
+                {% assign author_key = author_entry[0] %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+        {% if author_key != "" %}
+            {% assign author = site.data.authors[author_key] %}
+            <a href="{{ site.baseurl }}/about#{{ author.name | slugify }}">{{ author.name }}</a>{% unless forloop.last %}, {% endunless %}
+        {% else %}
+            {{ author_name }}{% unless forloop.last %}, {% endunless %}
+        {% endif %}
+    {% endfor %}
+
+    {% if page.date %}
+      <br>
+      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    {% endif %}
+  </div>
+
+  <h1 class="post-title">{{ page.title }}</h1>
+  <div class="post-line"></div>
+
+  {{ content }}
+</div>
+
+{% if page.comments %}
+  {% include comments.html %}
+{% endif %}
+
+<div class="pagination">
+  {% if page.next.url %}
+    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+  {% endif %}
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+  {% endif %}
+
+  <a href="#" class="top">Top</a>
+</div>
+
+<!-- Debug element to verify script loading -->
+<div id="footnote-debug" style="display: none;">Footnote script loaded</div>
+
+<script>
+// Debug code to verify DOM content loaded
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Page loaded');
+    // Log the footnote references that exist
+    const refs = document.querySelectorAll('a[href^="#fn"], sup[id^="fnref"] a');
+    console.log('Footnote refs found:', refs.length);
+    refs.forEach(ref => console.log('Ref:', ref.outerHTML));
+});
+</script>
+
+<script src="{{ site.baseurl }}/assets/js/footnotes.js"></script> 

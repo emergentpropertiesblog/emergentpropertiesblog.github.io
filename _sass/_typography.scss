@@ -1,0 +1,178 @@
+// Typography styles for the site
+
+// Base typography variables
+$font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-serif: "Libre Baskerville", Georgia, "Times New Roman", serif !default;
+$font-mono: "SF Mono", Consolas, Monaco, "Liberation Mono", "Courier New", monospace !default;
+
+// Colors
+$text-primary: #2c3e50 !default;
+$text-secondary: #666666 !default;
+$text-muted: #999999 !default;
+
+// Spacing
+$line-height-base: 1.6 !default;
+$line-height-heading: 1.3 !default;
+$paragraph-spacing: 1.5rem !default;
+$heading-spacing: 2rem !default;
+
+// Override theme variables
+$serif-primary: $font-serif !default;
+$sans-serif: $font-sans !default;
+$monospaced: $font-mono !default;
+$default-color: $text-primary !default;
+$default-shade: darken($text-primary, 10%) !default;
+$default-tint: lighten($text-primary, 10%) !default;
+
+// Base styles
+html {
+  font-family: $serif-primary;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  line-height: $line-height-base;
+  color: $default-color;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  width: 100%;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Container for centered content
+.container {
+  width: 100%;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-sans;
+  line-height: $line-height-heading;
+  margin-top: $heading-spacing;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: $default-shade;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+
+h5, h6 {
+  font-size: 1rem;
+}
+
+// Paragraphs
+p {
+  margin-bottom: $paragraph-spacing;
+  font-size: 1.1rem;
+  color: $default-color;
+  line-height: $line-height-base;
+}
+
+// Lists
+ul, ol {
+  margin-bottom: $paragraph-spacing;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Code blocks
+code, pre {
+  font-family: $font-mono;
+  font-size: 0.9em;
+  background-color: #f8f9fa;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+pre {
+  line-height: 1.5;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+// Blockquotes
+blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid $text-muted;
+  color: $text-secondary;
+  background-color: #f8f9fa;
+}
+
+// Article content
+.article-content {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+// Post meta
+.post-meta {
+  color: $text-secondary;
+  font-size: 0.9rem;
+  margin-bottom: $paragraph-spacing;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  
+  body {
+    padding: 0 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  h4 {
+    font-size: 1.1rem;
+  }
+} 
