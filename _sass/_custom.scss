@@ -183,20 +183,22 @@ a[href^="#fn:"].footnote {
         align-items: center;
         justify-content: center;
         margin-bottom: 2px;
+        width: 100%;
+        max-width: 750px; // Match blog-summary max-width for consistency
+        margin: 0 auto; // Center the entire header-content block
 
         .blog-title {
-            font-size: 2.5rem; // Adjust as needed
+            font-size: 2.5rem;
             margin: 0;
             color: $default-shade;
             text-align: left;
-            max-width: 300px;
+            max-width: 160px;
             line-height: 2.5rem;
           }
     
           .logo {
-            margin: 20px auto 1.2rem auto;
+            margin: 20px 25px 1.2rem 0; // Simplified margin declaration
             display: block;
-            margin-right: 25px;
           }
       }
   
