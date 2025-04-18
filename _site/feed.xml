@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-18T15:08:32-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Emergent properties</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>Emergent properties</name><email>rahulg603@gmail.com</email></author><entry><title type="html">Beyond evolution</title><link href="http://localhost:4000/2025/03/07/beyond-evolution/" rel="alternate" type="text/html" title="Beyond evolution" /><published>2025-03-07T00:00:00-05:00</published><updated>2025-03-07T00:00:00-05:00</updated><id>http://localhost:4000/2025/03/07/beyond-evolution</id><content type="html" xml:base="http://localhost:4000/2025/03/07/beyond-evolution/"><![CDATA[<div class="post-summary">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-18T15:19:55-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Emergent properties</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>Emergent properties</name><email>rahulg603@gmail.com</email></author><entry><title type="html">Beyond evolution</title><link href="http://localhost:4000/2025/03/07/beyond-evolution/" rel="alternate" type="text/html" title="Beyond evolution" /><published>2025-03-07T00:00:00-05:00</published><updated>2025-03-07T00:00:00-05:00</updated><id>http://localhost:4000/2025/03/07/beyond-evolution</id><content type="html" xml:base="http://localhost:4000/2025/03/07/beyond-evolution/"><![CDATA[<div class="post-summary">
     <p>In this first post of Emergent Properties, Dan and Rahul tackle perhaps the most fundamental question in biology - how do individuals and populations adapt to their environments? They explore the advantages and tradeoffs of evolution via genetic mutation and demonstrate how organisms can develop non-genetic mechanisms to develop adaptation 'shortcuts'. With examples ranging from bacterial nutrient sensing to immune receptor diversity to cancer, they synthesize a framework through which to understand the many different modes of biological adaptation.</p>
     <div class="summary-author">
         — <a href="/about#kaitavjeet-chowdhary" class="summary-author-link">Kaitavjeet Chowdhary</a>
@@ -64,11 +64,11 @@
 <p>Here’s a citation example <a href="#ref1">[1]</a>.</p>
 
 <div class="footnote-content" id="content-fn:fn1" data-author="Daniel Rubin" style="display: none;">
-    To the point where the idea of biological “teleology” is in many ways controversial (saying, for example, that an organism “wants” to adapt to a new environment) and is avoided in much scientific literature.
+    To the point where the idea of biological "teleology" is in many ways controversial (saying, for example, that an organism "wants" to adapt to a new environment) and is avoided in much scientific literature.
 </div>
 
 <div class="footnote-content" id="content-fn:fn2" data-author="Daniel Rubin" style="display: none;">
-    It is intriguing that, in the case of some of these “dead-ends,” we see a clear role for evolution (for example, an immunocompromised patient colonized by an opportunistic pathogen that is “evolving” yet is not transmissible). Spoilers for the last part of the article - a similar concept could be applied to something like learning, where it is very possible to develop knowledge in such a way that is very difficult to “unlearn.
+    It is intriguing that, in the case of some of these "dead-ends," we see a clear role for evolution (for example, an immunocompromised patient colonized by an opportunistic pathogen that is "evolving" yet is not transmissible). Spoilers for the last part of the article - a similar concept could be applied to something like learning, where it is very possible to develop knowledge in such a way that is very difficult to "unlearn."
 </div>
 
 <div class="footnote-content" id="content-fn:fn3" data-author="Daniel Rubin" style="display: none;">
@@ -76,7 +76,7 @@
 </div>
 
 <div class="footnote-content" id="content-fn:fn4" data-author="Rahul Gupta" style="display: none;">
-    There is significant controversy around the accuracy of this model in light of modern genomic data [CITATION]7,8,9. Indeed, even in 1973, Ohta proposed a “nearly-neutral theory of evolution”, stating that while many mutations may be slightly deleterious rather than strictly neutral, in finite population sizes drift overpowers selection and these appear neutral. Regardless, the neutral theory remains an important model for understanding selection and developing theoretical frameworks for evolution.
+    There is significant controversy around the accuracy of this model in light of modern genomic data [CITATION]7,8,9. Indeed, even in 1973, Ohta proposed a "nearly-neutral theory of evolution", stating that while many mutations may be slightly deleterious rather than strictly neutral, in finite population sizes drift overpowers selection and these appear neutral. Regardless, the neutral theory remains an important model for understanding selection and developing theoretical frameworks for evolution.
 </div>
 
 <div class="footnote-content" id="content-fn:fn5" data-author="Rahul Gupta" style="display: none;">
@@ -84,23 +84,23 @@
 </div>
 
 <div class="footnote-content" id="content-fn:fn6" data-author="Rahul Gupta" style="display: none;">
-    Though there are clear constraints on how rapidly mutation can occur and maintain organismal viability, it is also likely that the “optimal mutation rate” is a moving target that may or may not be achievable. For instance, it is possible that in humans the cost of deleterious mutations is high enough such that a lower mutation rate is desired but the biochemical cost of further reductions in the mutation rate is too high. These features may differ as a function of genomic region as well, with mutations in certain regions (e.g., developmental genes) producing a higher risk of deleteriousness, while variation is favored in others (e.g., HLA). V(D)J recombination is a clear example of this heterogeneity as part of a very specialized system.
+    Though there are clear constraints on how rapidly mutation can occur and maintain organismal viability, it is also likely that the "optimal mutation rate" is a moving target that may or may not be achievable. For instance, it is possible that in humans the cost of deleterious mutations is high enough such that a lower mutation rate is desired but the biochemical cost of further reductions in the mutation rate is too high. These features may differ as a function of genomic region as well, with mutations in certain regions (e.g., developmental genes) producing a higher risk of deleteriousness, while variation is favored in others (e.g., HLA). V(D)J recombination is a clear example of this heterogeneity as part of a very specialized system.
 </div>
 
 <h3 id="references">References</h3>
 
 <div id="ref1">[1] Darwin, C. (1859). On the Origin of Species.</div>
-<div id="ref2">[2] Sloan, P. "Evolutionary Thought Before Darwin,” The Stanford Encyclopedia of Philosophy (Spring 2024 Edition), Edward N. Zalta &amp; Uri Nodelman (eds.), https://plato.stanford.edu/archives/spr2024/entries/evolution-before-darwin/.</div>
-<div id="ref3">[3] Andrews, C. A, “Natural Selection, Genetic Drift, and Gene Flow Do Not Act in Isolation in Natural Populations,” 2010, Nature Education Knowledge 3(10):5, https://www.nature.com/scitable/knowledge/library/natural-selection-genetic-drift-and-gene-flow-15186648/.</div>
-<div id="ref4">[4] Yulo PRJ, Hendrickson HL, “The evolution of spherical cell shape; progress and perspective,” Biochem Soc Trans, 2019 Dec 20;47(6):1621-1634. doi: 10.1042/BST20180634. PMID: 31829405; PMCID: PMC6925525.</div>
-<div id="ref5">[5] Kimura M. “Evolutionary rate at the molecular level,” Nature, 1968 Feb 17;217(5129):624-6. doi: 10.1038/217624a0. PMID: 5637732.</div>
-<div id="ref6">[6] Kern AD, Hahn MW, “The Neutral Theory in Light of Natural Selection,” Mol Biol Evol, 2018 Jun 1;35(6):1366-1371. doi: 10.1093/molbev/msy092. PMID: 29722831.</div>
-<div id="ref7">[7] Callier, V, “Theorists Debate How ‘Neutral’ Evolution Really Is,” Quanta Magazine, 2018, Nov 8, https://www.quantamagazine.org/neutral-theory-of-evolution-challenged-by-evidence-for-dna-selection-20181108/.</div>
-<div id="ref8">[8] Ohta T, “Slightly deleterious mutant substitutions in evolution,” Nature, 1973 Nov 9;246(5428):96-8. doi: 10.1038/246096a0. PMID: 4585855.</div>
+<div id="ref2">[2] Sloan, P. "Evolutionary Thought Before Darwin," The Stanford Encyclopedia of Philosophy (Spring 2024 Edition), Edward N. Zalta &amp; Uri Nodelman (eds.), https://plato.stanford.edu/archives/spr2024/entries/evolution-before-darwin/.</div>
+<div id="ref3">[3] Andrews, C. A, "Natural Selection, Genetic Drift, and Gene Flow Do Not Act in Isolation in Natural Populations," 2010, Nature Education Knowledge 3(10):5, https://www.nature.com/scitable/knowledge/library/natural-selection-genetic-drift-and-gene-flow-15186648/.</div>
+<div id="ref4">[4] Yulo PRJ, Hendrickson HL, "The evolution of spherical cell shape; progress and perspective," Biochem Soc Trans, 2019 Dec 20;47(6):1621-1634. doi: 10.1042/BST20180634. PMID: 31829405; PMCID: PMC6925525.</div>
+<div id="ref5">[5] Kimura M. "Evolutionary rate at the molecular level," Nature, 1968 Feb 17;217(5129):624-6. doi: 10.1038/217624a0. PMID: 5637732.</div>
+<div id="ref6">[6] Kern AD, Hahn MW, "The Neutral Theory in Light of Natural Selection," Mol Biol Evol, 2018 Jun 1;35(6):1366-1371. doi: 10.1093/molbev/msy092. PMID: 29722831.</div>
+<div id="ref7">[7] Callier, V, "Theorists Debate How 'Neutral' Evolution Really Is," Quanta Magazine, 2018, Nov 8, https://www.quantamagazine.org/neutral-theory-of-evolution-challenged-by-evidence-for-dna-selection-20181108/.</div>
+<div id="ref8">[8] Ohta T, "Slightly deleterious mutant substitutions in evolution," Nature, 1973 Nov 9;246(5428):96-8. doi: 10.1038/246096a0. PMID: 4585855.</div>
 <div id="ref9">[9] Sniegowski PD, Gerrish PJ, Lenski RE. Evolution of high mutation rates in experimental populations of E. coli. Nature. 1997 Jun 12;387(6634):703-5. doi: 10.1038/42701. PMID: 9192894.</div>
-<div id="ref10">[10] Meyer D, C Aguiar VR, Bitarello BD, C Brandt DY, Nunes K, “A genomic perspective on HLA evolution,” Immunogenetics, 2018 Jan;70(1):5-27. doi: 10.1007/s00251-017-1017-3. Epub 2017 Jul 7. PMID: 28687858; PMCID: PMC5748415.</div>
-<div id="ref11">[11] Augusto DG, Murdolo LD, Chatzileontiadou DSM, et al. “A common allele of HLA is associated with asymptomatic SARS-CoV-2 infection,” Nature,2023 Aug;620(7972):128-136. doi: 10.1038/s41586-023-06331-x. Epub 2023 Jul 19. PMID: 37468623; PMCID: PMC10396966.</div>
-<div id="ref12">[12] Zhu M, Lu T, Jia Y, Luo X, et al. “Somatic Mutations Increase Hepatic Clonal Fitness and Regeneration in Chronic Liver Disease,” Cell, 2019 Apr 18;177(3):608-621.e12. doi: 10.1016/j.cell.2019.03.026. Epub 2019 Apr 4. PMID: 30955891; PMCID: PMC6519461.</div>
+<div id="ref10">[10] Meyer D, C Aguiar VR, Bitarello BD, C Brandt DY, Nunes K, "A genomic perspective on HLA evolution," Immunogenetics, 2018 Jan;70(1):5-27. doi: 10.1007/s00251-017-1017-3. Epub 2017 Jul 7. PMID: 28687858; PMCID: PMC5748415.</div>
+<div id="ref11">[11] Augusto DG, Murdolo LD, Chatzileontiadou DSM, et al. "A common allele of HLA is associated with asymptomatic SARS-CoV-2 infection," Nature,2023 Aug;620(7972):128-136. doi: 10.1038/s41586-023-06331-x. Epub 2023 Jul 19. PMID: 37468623; PMCID: PMC10396966.</div>
+<div id="ref12">[12] Zhu M, Lu T, Jia Y, Luo X, et al. "Somatic Mutations Increase Hepatic Clonal Fitness and Regeneration in Chronic Liver Disease," Cell, 2019 Apr 18;177(3):608-621.e12. doi: 10.1016/j.cell.2019.03.026. Epub 2019 Apr 4. PMID: 30955891; PMCID: PMC6519461.</div>
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:fn1">
