@@ -73,12 +73,12 @@ The development of the principles of evolution are one of the greatest (and argu
 Here's a citation example [[1]](#ref1).
 
 [^fn1]: {% include footnote.html
-    content="To the point where the idea of biological "teleology" is in many ways controversial (saying, for example, that an organism "wants" to adapt to a new environment) and is avoided in much scientific literature."
+    content="To the point where the idea of biological 'teleology' is in many ways controversial (saying, for example, that an organism "wants" to adapt to a new environment) and is avoided in much scientific literature."
     author="Daniel Rubin"
     id="fn1" %}
 
 [^fn2]: {% include footnote.html 
-    content="It is intriguing that, in the case of some of these "dead-ends," we see a clear role for evolution (for example, an immunocompromised patient colonized by an opportunistic pathogen that is "evolving" yet is not transmissible). Spoilers for the last part of the article - a similar concept could be applied to something like learning, where it is very possible to develop knowledge in such a way that is very difficult to "unlearn."
+    content="It is intriguing that, in the case of some of these 'dead-ends', we see a clear role for evolution (for example, an immunocompromised patient colonized by an opportunistic pathogen that is "evolving" yet is not transmissible). Spoilers for the last part of the article - a similar concept could be applied to something like learning, where it is very possible to develop knowledge in such a way that is very difficult to 'unlearn.'
     author="Daniel Rubin"
     id="fn2" %}
 
@@ -88,7 +88,7 @@ Here's a citation example [[1]](#ref1).
     id="fn3" %}
 
 [^fn4]: {% include footnote.html
-    content="There is significant controversy around the accuracy of this model in light of modern genomic data [CITATION]7,8,9. Indeed, even in 1973, Ohta proposed a "nearly-neutral theory of evolution", stating that while many mutations may be slightly deleterious rather than strictly neutral, in finite population sizes drift overpowers selection and these appear neutral. Regardless, the neutral theory remains an important model for understanding selection and developing theoretical frameworks for evolution."
+    content="There is significant controversy around the accuracy of this model in light of modern genomic data [CITATION]7,8,9. Indeed, even in 1973, Ohta proposed a 'nearly-neutral theory of evolution', stating that while many mutations may be slightly deleterious rather than strictly neutral, in finite population sizes drift overpowers selection and these appear neutral. Regardless, the neutral theory remains an important model for understanding selection and developing theoretical frameworks for evolution."
     author="Rahul Gupta"
     id="fn4" %}
 
@@ -98,7 +98,7 @@ Here's a citation example [[1]](#ref1).
     id="fn5" %}
 
 [^fn6]: {% include footnote.html
-    content="Though there are clear constraints on how rapidly mutation can occur and maintain organismal viability, it is also likely that the "optimal mutation rate" is a moving target that may or may not be achievable. For instance, it is possible that in humans the cost of deleterious mutations is high enough such that a lower mutation rate is desired but the biochemical cost of further reductions in the mutation rate is too high. These features may differ as a function of genomic region as well, with mutations in certain regions (e.g., developmental genes) producing a higher risk of deleteriousness, while variation is favored in others (e.g., HLA). V(D)J recombination is a clear example of this heterogeneity as part of a very specialized system."
+    content="Though there are clear constraints on how rapidly mutation can occur and maintain organismal viability, it is also likely that the 'optimal mutation rate' is a moving target that may or may not be achievable. For instance, it is possible that in humans the cost of deleterious mutations is high enough such that a lower mutation rate is desired but the biochemical cost of further reductions in the mutation rate is too high. These features may differ as a function of genomic region as well, with mutations in certain regions (e.g., developmental genes) producing a higher risk of deleteriousness, while variation is favored in others (e.g., HLA). V(D)J recombination is a clear example of this heterogeneity as part of a very specialized system."
     author="Rahul Gupta"
     id="fn6" %}
 
