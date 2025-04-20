@@ -29,32 +29,125 @@
     display: none;
 }
 
-.post-summary {
-    background-color: #2f3437;
-    color: #ffffff;
-    padding: 25px;
-    margin: 30px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+/* Reference styling within footnotes */
+.footnote-popup a[href^="#ref"] {
+    color: #DB4C40 !important;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    display: inline-block;
+    margin: 0 2px;
 }
 
-.post-summary p {
-    margin: 0;
-    line-height: 1.7;
-    font-size: 1.05rem;
-    font-weight: 300;
-    letter-spacing: 0.01em;
+.footnote-popup a[href^="#ref"]:hover {
+    color: #c13224 !important;
+    text-decoration: underline;
 }
 
-.post-summary .summary-author {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 0.9rem;
-    margin-top: 15px;
-    text-align: right;
-    font-style: italic;
-    font-weight: 300;
-}
+.post {
+    padding: 3rem 0;
+  
+    &-info {
+      color: $default-tint;
+      font-family: $serif-secondary;
+      letter-spacing: 0.5px;
+      text-align: center;
+  
+      span {
+        font-style: italic;
+      }
+    }
+  
+    &-title {
+      color: $default-shade;
+      font-family: $sans-serif;
+      font-size: 4rem;
+      margin: 1rem 0;
+      text-align: center;
+    }
+  
+    &-line {
+      border-top: 0.4rem solid $default-shade;
+      display: block;
+      margin: 0 auto 3rem;
+      width: 4rem;
+    }
+  
+    p {
+      margin: 0 0 1rem;
+    }
+  
+    a:hover {
+      text-decoration: underline;
+    }
+  
+    img {
+      margin: 0 auto 0.5rem;
+    }
+  
+    img + em {
+      color: $default-tint;
+      display: block;
+      font-family: $sans-serif;
+      font-size: 0.95rem;
+      width: 75%;
+      margin: 0 auto;
+      font-style: normal;
+      text-align: center;
+    }
+  
+    // CSS for making emoji inline
+    img.emoji {
+      display: inline-block;
+      left: 0;
+      transform: none;
+      width: 1rem;
+      height: 1rem;
+      vertical-align: text-top;
+      padding: 0;
+      margin: 0;
+    }
+  
+    // Reference styling
+    .references {
+      counter-reset: ref-counter;
+      div[id^="ref"] {
+        counter-increment: ref-counter;
+        &::before {
+          content: "[" counter(ref-counter) "]";
+          color: #DB4C40;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    &-summary {
+        background-color: #2f3437;
+        color: #ffffff;
+        padding: 25px;
+        margin: 30px 0;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    
+    &-summary p {
+        margin: 0;
+        line-height: 1.7;
+        font-size: 1.05rem;
+        font-weight: 300;
+        letter-spacing: 0.01em;
+    }
+    
+    &-summary .summary-author {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 0.9rem;
+        margin-top: 15px;
+        text-align: right;
+        font-style: italic;
+        font-weight: 300;
+    }
+    
+  }
 
 /* Link styles */
 .post a:not(.footnote):not(.top):not(.left):not(.right):not(.summary-author-link) {
