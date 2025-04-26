@@ -2,7 +2,7 @@
 layout: post
 title: "Beyond evolution"
 author: Rahul Gupta, Daniel Rubin
-date: 2025-03-07
+date: 2025-04-18
 tags: [evolution]
 summary_author: Kaitavjeet Chowdhary
 description: "In this first post of Emergent Properties, Dan and Rahul tackle perhaps the most fundamental question in biology - how do individuals and populations adapt to their environments? They explore the advantages and tradeoffs of evolution via genetic mutation and demonstrate how organisms can develop non-genetic mechanisms to develop adaptation “shortcuts”. With examples ranging from bacterial nutrient sensing to immune receptor diversity to cancer, they synthesize a framework through which to understand the many different modes of biological adaptation."

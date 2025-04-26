@@ -17,7 +17,6 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-remote-theme", "~> 0.4.3"
   gem "jekyll-paginate", "~> 1.1"
-  gem "jekyll-seo-tag", "~> 2.8"
   gem "jekyll-sass-converter", "~> 3.0"
 end
 
@@ -37,3 +36,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # Add logger gem to silence the warning
 gem "logger", "~> 1.6.0"
+
+gem 'jekyll-seo-tag'

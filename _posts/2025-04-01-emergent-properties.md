@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Emergent properties"
-date:   2025-03-06 09:53:44 -0500
+date: 2025-04-01
 categories: jekyll update
 author: Emergent properties team
 description: Welcome to Emergent Properties! We are a small group of friends and MD-PhD program classmates who love having nerdy, cross-disciplinary discussions that straddle the scientific and clinical worlds. In this opening blog post, we hope to convey our motivations and passion for this project, and types of topics and articles you can expect to see from us.
