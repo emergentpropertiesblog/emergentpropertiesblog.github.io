@@ -14,7 +14,6 @@ We are a group of six friends who are using this blog to share our love for thin
         <div class="author-card">
             <img src="{{ site.baseurl }}/assets/images/{{ author[1].image }}" alt="{{ author[1].name }}">
             <h4>{{ author[1].name }}</h4>
-            <p class="author-role">{{ author[1].role }}</p>
             {% if author[1].website or author[1].twitter or author[1].github or author[1].linkedin %}
             <div class="social-icons">
                 {% if author[1].website %}

@@ -3,7 +3,6 @@ kaitavjeet_chowdhary:
   image: kait_photo.jpg
   bio: >-
     Kait grew up in the wilds of suburban Connecticut before moving to the urban jungle of Harvard for his undergrad and MD/PhD. He did his PhD in the Harvard Immunology program, where he worked with Diane Mathis and Christophe Benoist on transcription factor networks controlling Treg identity and diversity across mouse and human models. He is truly an exceptional listener, with an uncanny capacity for summarizing and then expanding upon a complex discussion. He carries a vast reserve of empathy, which serves him particularly well in scientific paper reading, as he is sometimes able to glean cryptic meaning from authors. He also has a life outside of science and medicine–he enjoys spending time with his dog, playing tennis, and trying new recipes.
-  role: MD-PhD Student
   bio_author: Dan Rubin
 
 preston_ge:
@@ -11,8 +10,9 @@ preston_ge:
   image: preston_photo.jpg
   bio: >-
     Preston grew up in majestic Maryland, before making his family and friends proud by receiving an undergraduate degree and masters in Neuroscience from Johns Hopkins. There he worked to understand the pathways of neurodegeneration in Parkinson's disease and carried out preclinical studies of novel therapeutic targets in the lab of Ted and Valina Dawson. He continued on this incredible trajectory by getting his MD-PhD from Harvard Medical School, where his love affair with the brain continued to blossom. For his PhD, he was an integral member of the Heiman Laboratory at MIT where he made pivotal progress to our understanding of the molecular pathways leading to neurodegeneration. His incisive questions during class lectures, research seminars, and PhD defenses are perhaps his biggest claim to fame. His second is his ability to make new cocktails, where his creativity, sense of humor, and impeccable taste are in full-display through his creations. If that was not all enough, the man is the most caring cat-dad the world has known, and can out-bike us all on the road.
-  role: MD-PhD Student
   bio_author: Deborah Plana
+  twitter: ge_preston
+  scholar: 0gSy-LgAAAAJ
 
 rahul_gupta:
   name: Rahul Gupta
@@ -22,11 +22,11 @@ rahul_gupta:
 
 
     As evidenced by the interdisciplinary nature of his work, Rahul is known amongst his friends as a deep and broad thinker, who all of us know will be able to provide insightful advice and comments on any topic of discussion whether it's on the future of human disease research, which bar we should go to next, or how amazing it is we can turn on touch-sensitive lamps through a metallic credit card. When not busy solving human biology or being an excellent listener and thoughtful friend, Rahul enjoys watching horror and sci-fi movies, playing indie games on his PS5, taking amazing photos with his drone, and traveling.
-  role: MD-PhD Student
   website: https://gupta.bio
   twitter: rahulg603
   github: rahulg603
-  scholar: mEIsOuMAAAAJ # Replace with actual Google Scholar ID
+  linkedin: https://www.linkedin.com/in/grahul1/
+  scholar: mEIsOuMAAAAJ
   bio_author: Preston Ge
 
 deborah_plana:
@@ -37,8 +37,10 @@ deborah_plana:
 
 
     Deb is known as a warm friend with an inspiring, laser focus. She is persistent in developing a comprehensive understanding of every subject, asking incisive questions that get to the core of the topic at hand. She is generous with her ideas and offers clear viewpoints that always move discussions forward. When not in the lab or hospital, Deb can be found sharing her love of Shakira with her classmates.
-  role: Anesthesiology Resident
   bio_author: Kaitavjeet Chowdhary
+  website: https://debplana.github.io/
+  linkedin: https://www.linkedin.com/in/deborah-plana/
+  scholar: 8nEnF9YAAAAJ
 
 dan_rubin:
   name: Daniel Rubin
@@ -48,18 +50,19 @@ dan_rubin:
 
 
     Dan is known among his friends by his self-deprecating sense of humor, humility almost to a fault, and love for gathering and spilling tea. He is also known to run marathons. Very fast. Lore has it during his third-year clinical rotations he finished the Boston Marathon in ~2.5 hours and then returned to the hospital afterwards in time to finish rounds. When not practicing medicine, advancing our understanding of multi-drug resistant Neisseria gonorrhoeae, or training for his next marathon, Dan spends his time hanging out with his wife Jenny and traveling to exotic destinations.
-  role: MD-PhD Student
   bio_author: Carla Winter
+  twitter: DanielHFRubin
+  scholar: dfPPfuAAAAAJ
 
 carla_winter:
   name: Carla Winter
-  image: IMG_1594.heic
+  image: IMG_1594.jpeg
   bio: >-
     Unlike most people, Carla started her young career (even coming into college) laser-focused on one question: how can we regenerate the CNS? To a naïve person, this may seem like a narrow mindset, however to Carla it has been a gateway into a broad plethora of fields – as an undergraduate at the University of Pennsylvania she studied Bioengineering and applied this to her passion, designing tissue scaffolds to improve axonal pathing. She then spent a year on a Mitchell Scholarship completing a masters in Galway, Ireland at NUIG moving on to studying responses to neural injury, focusing on inflammation. As an MD-PhD student at Harvard Medical School, she then focused on how to catalog neuronal variation with respect to spinal projecting neurons, leading highly impactful work that will form the basis of decades of future investigation. Looking forward she is eager to pursue a career in neuro-opthalamology.
 
 
     Carla has cultivated tremendous depth in her scientific thinking in part by approaching nearly intractable problems with methods across disciplines. This even extends to her hobbies. For instance, she is obsessed with animals and naturally has spent countless hours hypothesizing about how study of projecting neurons in (1) giraffes, (2) deep sea creatures, and (3) cats could differ from humans and provide new basic insights. She also loves the ocean – and due to her clinical passions in neuro-ophthalmology, accordingly has dreamed about developing "eyedrop contacts" (still trying to figure this one out) to avoid issues related to contact contamination by the ocean. She is very passionate about cycling, and we are still trying to figure out how she will somehow connect this to neural recovery and repair.
-  role: MD-PhD Student 
   bio_author: Rahul Gupta
   twitter: CarlaCWinter
+  linkedin: https://www.linkedin.com/in/carlawinter0
   scholar: zrRWiUIAAAAJ
