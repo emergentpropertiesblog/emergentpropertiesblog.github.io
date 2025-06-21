@@ -180,3 +180,44 @@
 .summary-author-link:hover {
     text-decoration-thickness: 2px !important;
 }
+
+.author-bio {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: -0.6rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+}
+
+.author-bio-dash {
+    color: #DB4C40;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.author-bio-name {
+    font-style: italic;
+    font-size: 1rem;
+    color: #DB4C40;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.author-bio-name:hover {
+    color: #c13224;
+    text-decoration: underline;
+}
+
+ol {
+  list-style-type: decimal;
+  li {
+    margin-bottom: 1em;
+    margin-left: 1.5em;
+  }
+}
