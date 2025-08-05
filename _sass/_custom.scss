@@ -296,3 +296,37 @@ a[href^="#fn:"].footnote {
         align-self: flex-end;
     }
 }
+
+// Subscribe page styles
+.subscribe {
+    .google-form-container {
+        margin: 2rem 0;
+        border-radius: 8px;
+        overflow: hidden;
+        //box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        
+        iframe {
+            border: none;
+            border-radius: 8px;
+            max-width: 100%;
+            min-height: 300px;
+            max-height: 500px;
+            
+            @media (max-width: 768px) {
+                min-height: 800px;
+            }
+        }
+    }
+    
+    .intro {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: $default-color;
+        
+        p {
+            margin: 0;
+        }
+    }
+}
