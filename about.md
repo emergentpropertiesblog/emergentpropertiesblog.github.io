@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <div class="intro">
-We are a group of six friends who are using this blog to share our love for thinking broadly about problems and questions in science and medicine. We wrote the below bios for each other!
+We are a group of six friends who are using this blog to share our love for thinking broadly about problems in science and medicine. See our bios below (we wrote them for each other), and please email us at <a href="mailto:emergentpropertiesblog@gmail.com">emergentpropertiesblog@gmail.com</a> with any comments, questions, or thoughts!
 </div>
 
 <div class="author-container">

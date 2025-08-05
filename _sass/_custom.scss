@@ -320,13 +320,14 @@ a[href^="#fn:"].footnote {
     
     .intro {
         text-align: center;
-        margin-bottom: 2rem;
-        font-size: 1.1rem;
+        margin-bottom: 1rem;
         line-height: 1.6;
         color: $default-color;
+        max-width: 800px;
         
         p {
             margin: 0;
+            font-size: 1.2rem;
         }
     }
 }
