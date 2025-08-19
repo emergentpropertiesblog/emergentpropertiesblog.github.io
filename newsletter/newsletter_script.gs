@@ -380,7 +380,6 @@ function getRawPostFromGitHub(postInfo) {
  */
 function getRawPostFromSource(postInfo) {
   try {
-    // This would be customized based on your setup
     const rawUrl = CONFIG.POST_SOURCE_URL + extractPostIdentifier(postInfo.url);
     
     const response = UrlFetchApp.fetch(rawUrl, {
@@ -590,78 +589,78 @@ function createHTMLFromFrontMatter(post, dateStr) {
         <!-- Main container -->
         <div style="max-width: 50rem; margin: 0 auto; background: white; padding: 0 1rem;">
           
-          <!-- Header - Matching archive header style with logo -->
+          <!-- Header-->
           <div style="padding: 60px 0 40px 0; border-bottom: 1px solid #f2f2f2; text-align: center;">
             <!-- Logo and title container - RESPONSIVE CENTERED APPROACH -->
             <div style="text-align: center; margin-bottom: 30px;">
               <img src="https://emergentpropertiesblog.com/assets/images/logored.png" 
                    alt="Emergent Properties Logo" 
-                   style="width: 120px; height: 120px; border: 2px solid #2c3e50; border-radius: 50%; display: block; margin: 0 auto 20px auto;">
-              <h1 style="color: #2c3e50; margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 3rem; font-weight: 600; letter-spacing: -0.02em; line-height: 1.3; text-align: center;">
+                   style="width: 105px; height: 105px; border: 2px solid #2c3e50; border-radius: 50%; display: block; margin: 0 auto 20px auto;">
+              <h1 style="color: #2c3e50; margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 2.75rem; font-weight: 600; letter-spacing: -0.02em; line-height: 1.3; text-align: center;">
                 Emergent Properties
               </h1>
             </div>
             
-            <div style="border-top: 0.4rem solid #2c3e50; display: block; margin: 0 auto 3rem; width: 4rem;"></div>
-            <p style="color: #666666; margin: 15px 0 0 0; font-size: 20px; font-weight: 400; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+            <div style="border-top: 0.3rem solid #2c3e50; display: block; margin: 0 auto 1.6rem; width: 4rem;"></div>
+            <p style="color: #666666; margin: 11px 0 0 0; font-size: 24px; font-weight: 400; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
               New post published
             </p>
           </div>
           
           <!-- Content -->
-          <div style="padding: 40px 0;">
+          <div style="padding: 30px 0;">
             
             <!-- Article title - Matching archive post title style -->
-            <h2 style="color: #2c3e50; margin: 0 0 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 1.6rem; line-height: 1.3; font-weight: 600; letter-spacing: -0.01em;">
+            <h2 style="color: #2c3e50; margin: 0 0 8px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 1.4rem; line-height: 1.3; font-weight: 600; letter-spacing: -0.01em;">
               ${post.title}
             </h2>
             
             <!-- Author and date info - Matching archive post time style -->
-            <div style="margin-bottom: 35px;">
+            <div style="margin-bottom: 15px;">
               <p style="color: #999999; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 1rem; margin: 0; font-weight: 400; letter-spacing: 0.5px;">
                 ${post.author} • ${dateStr}
               </p>
             </div>
             
             <!-- Article excerpt/description - Matching paragraph style -->
-            <div style="margin: 35px 0;">
-              <p style="color: #2c3e50; line-height: 1.6; font-size: 1.1rem; margin-bottom: 1.5rem; font-weight: 400;">
+            <div style="margin: 25px 0;">
+              <p style="color: #2c3e50; line-height: 1.6; font-size: 1.15rem; margin-bottom: 1.3rem; font-weight: 400;">
                 ${post.description}
               </p>
             </div>
             
             <!-- Read more button - Using site's link color -->
-            <div style="margin: 40px 0;">
+            <div style="margin: 25px 0;">
               <a href="${post.url}" 
-                 style="color: #DB4C40; text-decoration: none; font-weight: 500; font-size: 1.1rem; border-bottom: 1px solid #DB4C40; padding-bottom: 2px; transition: color 0.2s ease;">
+                 style="color: #DB4C40; text-decoration: none; font-weight: 500; font-size: 1.15rem; border-bottom: 1px solid #DB4C40; padding-bottom: 2px; transition: color 0.2s ease;">
                 Read the full post →
               </a>
             </div>
             
             <!-- Separator line -->
-            <div style="border-top: 1px solid #f2f2f2; margin: 50px 0 40px 0;"></div>
+            <div style="border-top: 1px solid #f2f2f2; margin: 25px 0 25px 0;"></div>
             
             <!-- About section -->
-            <div style="margin: 40px 0;">
+            <div style="margin: 15px 0;">
               <h4 style="color: #2c3e50; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size: 1.15rem; font-weight: 600; margin: 0 0 15px 0;">
                 About Emergent Properties
               </h4>
-              <p style="color: #666666; line-height: 1.6; font-size: 1.1rem; margin: 0; font-weight: 400;">
-                We are a small group of friends and MD-PhD program classmates who love having nerdy, cross-disciplinary discussions that straddle the scientific and clinical worlds. We have broad scientific discussions that go beyond individual fields to try to create interesting new perspectives.
+              <p style="color: #666666; line-height: 1.6; font-size: 1.15rem; margin: 0; font-weight: 400;">
+                We are a small group of friends and MD-PhD program classmates who love having nerdy, cross-disciplinary discussions that straddle the scientific and clinical worlds. We have broad scientific discussions that go beyond individual fields to try to create interesting new perspectives. See <a href="https://emergentpropertiesblog.com/2025/04/01/emergent-properties/">our first post</a> for more information on our philosophy and goals.
               </p>
             </div>
             
             <!-- Discussion prompt - Using site's accent color -->
             <div style="background: rgba(212, 203, 179, 0.1); padding: 30px; margin: 40px 0; border-left: 3px solid #D4CBB3;">
-              <p style="color: #2c3e50; line-height: 1.6; font-size: 1.1rem; margin: 0; font-weight: 400;">
+              <p style="color: #2c3e50; line-height: 1.6; font-size: 1.15rem; margin: 0; font-weight: 400;">
                 <strong>Join the discussion:</strong> Have thoughts or questions about this article? 
                 We'd love to hear from you. Simply reply to this email to start a conversation.
               </p>
             </div>
             
             <!-- Browse more -->
-            <div style="margin: 40px 0;">
-              <p style="color: #666666; font-size: 1.1rem; margin: 0 0 15px 0;">
+            <div style="margin: 20px 0;">
+              <p style="color: #666666; font-size: 1.15rem; margin: 0 0 5px 0;">
                 <a href="${CONFIG.BLOG_URL}" style="color: #DB4C40; text-decoration: none; font-weight: 500; border-bottom: 1px solid #DB4C40; padding-bottom: 1px;">
                   Browse all articles →
                 </a>
