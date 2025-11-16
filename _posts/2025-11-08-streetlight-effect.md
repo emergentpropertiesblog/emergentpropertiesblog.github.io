@@ -6,7 +6,7 @@ date: 2025-11-08
 tags: [bias, metascience]
 summary_author: Rahul Gupta
 description: "The act of asking the 'right' scientific question is hailed as one of the most essential skills of a scientific investigator. However, the choice of question, and how it is investigated, is highly dependent on factors such as cost, available tools, and prior experience. Here, Preston sheds a light on how these and other forces coalesce to create the “streetlight effect” in science, how this effect shapes the corpus of scientific literature, and notable discoveries that defy this bias."
-topline: "Abstraction in modeling biological systems can help scientists avoid missing the forest for the trees"
+topline: "Exploring bias in which scientific questions are asked and its implications for discovery"
 ---
 
 {% include post_summary.html

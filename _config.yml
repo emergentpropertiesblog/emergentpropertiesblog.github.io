@@ -33,7 +33,7 @@ author:
   email: emergentpropertiesblog@gmail.com
 
 # Pagination
-paginate: 5
+paginate: 8
 paginate_path: "/page/:num/"
 
 # Build settings
