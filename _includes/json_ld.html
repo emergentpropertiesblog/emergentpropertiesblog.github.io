@@ -1,0 +1,72 @@
+{% comment %}
+Schema.org structured data: BlogPosting for posts, WebSite for the homepage and
+WebPage for everything else. `author` may be a list or a ", "-separated string;
+names found in _data/authors.yml link to their bio and profiles.
+{% endcomment %}
+{% capture publisher_json %}{
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "url": {{ "/" | absolute_url | jsonify }},
+    "logo": {"@type": "ImageObject", "url": {{ site.logo | absolute_url | jsonify }}}
+  }{% endcapture %}
+{% assign page_image = page.image.path | default: page.image %}
+{% assign page_description = page.description | default: site.description | strip_html | normalize_whitespace %}
+<script type="application/ld+json">
+{% if page.collection == "posts" %}
+{% if page.author.first %}{% assign author_names = page.author %}{% else %}{% assign author_names = page.author | split: ", " %}{% endif %}
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page_description | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "mainEntityOfPage": {"@type": "WebPage", "@id": {{ page.url | absolute_url | jsonify }}},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+  {% if page_image %}"image": {{ page_image | absolute_url | jsonify }},{% endif %}
+  {% if page.tags.size > 0 %}"keywords": {{ page.tags | jsonify }},{% endif %}
+  "author": [{% for author_name in author_names %}
+    {% assign author = nil %}
+    {% for author_entry in site.data.authors %}
+      {% if author_entry[1].name == author_name %}{% assign author = author_entry[1] %}{% break %}{% endif %}
+    {% endfor %}
+    {% if author %}
+      {% assign same_as = "" | split: "" %}
+      {% if author.website %}{% assign same_as = same_as | push: author.website %}{% endif %}
+      {% if author.twitter %}{% capture link %}https://twitter.com/{{ author.twitter }}{% endcapture %}{% assign same_as = same_as | push: link %}{% endif %}
+      {% if author.github %}{% capture link %}https://github.com/{{ author.github }}{% endcapture %}{% assign same_as = same_as | push: link %}{% endif %}
+      {% if author.linkedin %}{% assign same_as = same_as | push: author.linkedin %}{% endif %}
+      {% if author.scholar %}{% capture link %}https://scholar.google.com/citations?user={{ author.scholar }}{% endcapture %}{% assign same_as = same_as | push: link %}{% endif %}
+      {% capture author_url %}{{ "/about/" | absolute_url }}#{{ author.name | slugify }}{% endcapture %}
+    {
+      "@type": "Person",
+      "name": {{ author.name | jsonify }},
+      "url": {{ author_url | jsonify }}{% if same_as.size > 0 %},
+      "sameAs": {{ same_as | jsonify }}{% endif %}
+    }{% else %}
+    {"@type": "Organization", "name": {{ site.title | jsonify }}, "url": {{ "/" | absolute_url | jsonify }}}{% endif %}{% unless forloop.last %},{% endunless %}{% endfor %}
+  ],
+  "publisher": {{ publisher_json }}
+}
+{% elsif page.url == "/" %}
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.title | jsonify }},
+  "description": {{ site.description | strip | jsonify }},
+  "url": {{ "/" | absolute_url | jsonify }},
+  {% if page_image %}"image": {{ page_image | absolute_url | jsonify }},{% endif %}
+  "publisher": {{ publisher_json }}
+}
+{% else %}
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{ page.title | default: site.title | jsonify }},
+  "description": {{ page_description | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "isPartOf": {"@type": "WebSite", "name": {{ site.title | jsonify }}, "url": {{ "/" | absolute_url | jsonify }}},
+  "publisher": {{ publisher_json }}
+}
+{% endif %}
+</script>

@@ -13,19 +13,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>{{ page.title }} - {{ site.title }}</title>
-    
     <!-- Theme CSS -->
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
     
-    <!-- MathJax for LaTeX support -->
+    {% if page.math %}
+    <!-- MathJax for LaTeX support; add `math: true` to a page's front matter to load it -->
     <script type="text/javascript" async
       src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
+    {% endif %}
 
     <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
     
 
-  {% seo %}
+  {% comment %}jekyll-seo-tag's <title> falls back to "site title | site description"
+  when a page shares the site's title (the first post), so the title is built here
+  instead: "Page title | Site title", or just the site title.{% endcomment %}
+  <title>{% if paginator.page > 1 %}Page {{ paginator.page }} of {{ paginator.total_pages }} for {% endif %}{% if page.title and page.title != site.title %}{{ page.title | smartify | strip_html | normalize_whitespace | escape }} | {% endif %}{{ site.title | escape }}</title>
+
+  {% comment %}jekyll-seo-tag emits meta and Open Graph tags. Its JSON-LD is
+  dropped in favour of json_ld.html, which credits every author and names the blog
+  (not the first author) as publisher.{% endcomment %}
+  {% capture seo_tags %}{% seo title=false %}{% endcapture %}
+  {{ seo_tags | split: '<script type="application/ld+json">' | first }}
+  {% include json_ld.html %}
 </head>
