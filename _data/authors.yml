@@ -1,5 +1,7 @@
 kaitavjeet_chowdhary:
   name: Kaitavjeet Chowdhary
+  initials: KC
+  short_name: Kait
   image: kait_photo.jpg
   bio: >-
     Kait grew up in the wilds of suburban Connecticut before moving to the urban jungle of Harvard for his undergrad and MD/PhD. He did his PhD in the Harvard Immunology program, where he worked with Diane Mathis and Christophe Benoist on transcription factor networks controlling Treg identity and diversity across mouse and human models. He is truly an exceptional listener, with an uncanny capacity for summarizing and then expanding upon a complex discussion. He carries a vast reserve of empathy, which serves him particularly well in scientific paper reading, as he is sometimes able to glean cryptic meaning from authors. He also has a life outside of science and medicine–he enjoys spending time with his dog, playing tennis, and trying new recipes.
@@ -7,6 +9,7 @@ kaitavjeet_chowdhary:
 
 preston_ge:
   name: Preston Ge
+  initials: PG
   image: preston_photo.jpg
   bio: >-
     Preston grew up in majestic Maryland, before making his family and friends proud by receiving an undergraduate degree and masters in Neuroscience from Johns Hopkins. There he worked to understand the pathways of neurodegeneration in Parkinson's disease and carried out preclinical studies of novel therapeutic targets in the lab of Ted and Valina Dawson. He continued on this incredible trajectory by getting his MD-PhD from Harvard Medical School, where his love affair with the brain continued to blossom. For his PhD, he was an integral member of the Heiman Laboratory at MIT where he made pivotal progress to our understanding of the molecular pathways leading to neurodegeneration. His incisive questions during class lectures, research seminars, and PhD defenses are perhaps his biggest claim to fame. His second is his ability to make new cocktails, where his creativity, sense of humor, and impeccable taste are in full-display through his creations. If that was not all enough, the man is the most caring cat-dad the world has known, and can out-bike us all on the road.
@@ -16,6 +19,7 @@ preston_ge:
 
 rahul_gupta:
   name: Rahul Gupta
+  initials: RG
   image: IMG_3710.jpeg
   bio: >-
     Rahul Gupta's origins story began in the sunlit uplands of Connecticut. He then journeyed to the historical city of Philadelphia, where he completed an undergraduate degree in Chemical Engineering and Biology at UPenn. After working at a diverse range of different locations and topics - including a brief stint at the electronic medical records giant Epic, studying the role of dipeptide repeats in ALS, and probing genetic regulators of liver lipid species - Rahul began his MD/PhD at Harvard in 2017. During his thesis work, Rahul straddled the intersection of human genetics and mitochondrial biology, leveraging the power of large datasets to develop a deeper understanding of human biology and disease mechanisms. He will be starting as an Internal Medicine resident in the coming months.
@@ -31,6 +35,8 @@ rahul_gupta:
 
 deborah_plana:
   name: Deborah Plana
+  initials: DP
+  short_name: Deb
   image: Plana_Headshot_small.JPG
   bio: >-
     Born in Caracas, Venezuela, and raised in Miami, Deborah (Deb) Plana converted ample sunshine into boundless curiosity about math and science. Interested in tackling pressing health problems through a quantitative lens, she traded warm summers for chilly winters as an undergraduate at MIT. There, she studied biological engineering with a minor in statistics and data science, conducting research with Douglas Lauffenburger, where she straddled computation and experimentation across diverse projects to bring basic biology to clinical application. She brought this same passion to translate discoveries for the benefit of patients to the Harvard-MIT MD-PhD program. During her PhD in Systems Biology, she worked with Peter Sorger and Adam Palmer to develop statistical methods to better analyze clinical trials to advance otherwise overlooked therapies to the clinic and discover response biomarkers. During the COVID-19 pandemic, she founded and co-led a 100-person volunteer team to address medical supply shortages using engineering through research and engineering design. Inspired by the deluge of data in the operating room and critical care settings, she now aims to apply to her systems biology training to inform her work as an anesthesia resident at MGH.
@@ -44,6 +50,8 @@ deborah_plana:
 
 dan_rubin:
   name: Daniel Rubin
+  initials: DR
+  short_name: Dan
   image: Dan.jpeg
   bio: >-
     With initials shared by dihydrofolate reductase, Daniel Hidemitsu Fujii Rubin was destined to be a biologist. He is a native of Newton MA, and luckily didn't have to travel very far to carry out his destiny - 7 miles to be exact. He trekked across the Charles River to complete an undergraduate degree in biochemistry at Harvard College, and then made the long journey back across the river to Harvard Medical School for his MD-PhD training. For his PhD ('23), he worked in Yonatan Grad's lab at the Harvard School of Public Health studying antibiotic resistance, genomics, and host-pathogen interactions. He will be starting his residency in Internal Medicine in 2025 (stay tuned for where!), and intends to pursue a fellowship in infectious disease.
@@ -56,6 +64,7 @@ dan_rubin:
 
 carla_winter:
   name: Carla Winter
+  initials: CW
   image: IMG_1594.jpeg
   bio: >-
     Unlike most people, Carla started her young career (even coming into college) laser-focused on one question: how can we regenerate the CNS? To a naïve person, this may seem like a narrow mindset, however to Carla it has been a gateway into a broad plethora of fields – as an undergraduate at the University of Pennsylvania she studied Bioengineering and applied this to her passion, designing tissue scaffolds to improve axonal pathing. She then spent a year on a Mitchell Scholarship completing a masters in Galway, Ireland at NUIG moving on to studying responses to neural injury, focusing on inflammation. As an MD-PhD student at Harvard Medical School, she then focused on how to catalog neuronal variation with respect to spinal projecting neurons, leading highly impactful work that will form the basis of decades of future investigation. Looking forward she is eager to pursue a career in neuro-opthalamology.

@@ -150,13 +150,13 @@
   }
 
 /* Link styles */
-.post a:not(.footnote):not(.top):not(.left):not(.right):not(.summary-author-link) {
+.post a:not(.footnote):not(.top):not(.left):not(.right):not(.summary-author-link):not(.rt-speaker) {
     color: #DB4C40 !important;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
-.post a:not(.footnote):not(.top):not(.left):not(.right):not(.summary-author-link):hover {
+.post a:not(.footnote):not(.top):not(.left):not(.right):not(.summary-author-link):not(.rt-speaker):hover {
     color: #c13224 !important;
 }
 

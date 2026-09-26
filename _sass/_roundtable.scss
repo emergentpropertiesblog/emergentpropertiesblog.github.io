@@ -1,0 +1,70 @@
+// Roundtable post styles (see _layouts/roundtable.html)
+// Font, paragraph and line spacing are left to the regular post styles.
+
+// Width of the speaker-name column; text hangs beside it, leaving
+// whitespace below the name
+$rt-speaker-col: 4.75em;
+
+.roundtable {
+    .rt-turn,
+    .rt-cont {
+        padding-left: $rt-speaker-col;
+    }
+
+    .rt-turn {
+        text-indent: -$rt-speaker-col;
+    }
+
+    .rt-speaker {
+        display: inline-block;
+        box-sizing: border-box;
+        min-width: $rt-speaker-col;
+        padding-right: 0.5em;  // keeps a gap after longer names
+        text-indent: 0;
+        font-weight: 700;
+        color: $default-shade !important;
+        text-decoration: none !important;
+
+        &::after {
+            content: ":";
+        }
+
+        &:hover {
+            text-decoration: underline !important;
+        }
+    }
+
+    // Discussion leader's name is highlighted in the site's accent red
+    .rt-speaker.rt-leader {
+        color: #DB4C40 !important;
+    }
+}
+
+// Section break (--- in markdown): a light rule broken by "///" in the middle
+$rt-break-color: #d6d6d6;
+$rt-break-gap: 1.6em;  // half-width of the gap in the rule around "///"
+
+.roundtable hr {
+    height: auto;
+    margin: 2.5rem 0;
+    border: 0;
+    background:
+        linear-gradient(to right,
+            $rt-break-color calc(50% - #{$rt-break-gap}),
+            transparent calc(50% - #{$rt-break-gap}),
+            transparent calc(50% + #{$rt-break-gap}),
+            $rt-break-color calc(50% + #{$rt-break-gap}))
+        center / 100% 1px no-repeat;
+    color: darken($rt-break-color, 8%);
+    font-family: $serif-primary;
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    overflow: visible;
+
+    &::before {
+        content: "///";
+        letter-spacing: 0.15em;
+        padding-left: 0.15em;  // balances the trailing letter-spacing
+    }
+}

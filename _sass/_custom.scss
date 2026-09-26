@@ -272,6 +272,24 @@ a[href^="#fn:"].footnote {
     }
   }
 
+// Match the other pages: center the post list on the screen, with the
+// sidebar just to its left, once there's room for a sidebar's width either side
+@media screen and (min-width: $main-width + 2 * $sidebar-width) {
+    .homepage {
+        .top-half,
+        .bottom-half {
+            width: 100%;
+            max-width: $main-width + 2 * $sidebar-width;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bottom-half {
+            padding-right: $sidebar-width;
+        }
+    }
+}
+
 .author-role {
     font-size: 1rem;
     margin-top: 10px;

@@ -23,6 +23,7 @@
 // Import custom styles
 @import "custom";
 @import "about";
+@import "roundtable";
 
 // Navigation styles
 .nav {
@@ -102,6 +103,20 @@ main {
   margin-left: $sidebar-width;  // Same as sidebar width
   width: calc(100% - #{$sidebar-width});
   padding: 2rem;
+}
+
+// Center the content column on the screen, with the sidebar just to its
+// left, once the screen is wide enough to fit a sidebar's width either side
+$centered-width: $main-width + 2 * $sidebar-width;
+
+@media screen and (min-width: $centered-width) {
+  .nav {
+    left: calc((100vw - #{$main-width}) / 2 - #{$sidebar-width});
+  }
+
+  main {
+    margin-left: calc((100vw - #{$main-width}) / 2);
+  }
 }
 
 .container {
