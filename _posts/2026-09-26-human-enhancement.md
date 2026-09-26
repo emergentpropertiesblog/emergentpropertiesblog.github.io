@@ -3,7 +3,7 @@ layout: roundtable
 title: "Roundtable: The ethics of human enhancement"
 author: Kaitavjeet Chowdhary, Preston Ge, Rahul Gupta, Deborah Plana, Daniel Rubin, Carla Winter
 date: 2026-09-26
-tags: [roundtable, metascience]
+tags: [roundtable, human enhancement, ethics]
 summary_author: Daniel Rubin
 discussion_leader: Daniel Rubin
 description: "This is an excerpt of a longer discussion held between the six of us across topics focusing on the ethics of human enhancement. Although we are certainly not experts on bioethics, we tried to frame the discussion around a series of tractable hypotheticals ranging from medical treatment to permanent augmentation."

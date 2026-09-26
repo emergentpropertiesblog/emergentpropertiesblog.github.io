@@ -25,13 +25,15 @@ $rt-speaker-col: 4.75em;
         color: $default-shade !important;
         text-decoration: none !important;
 
-        &::after {
-            content: ":";
-        }
-
         &:hover {
             text-decoration: underline !important;
         }
+    }
+
+    // Space between the name and the text, kept in the markup for Reader views;
+    // the name's column already provides the gap
+    .rt-gap {
+        font-size: 0;
     }
 
     // Discussion leader's name is highlighted in the site's accent red

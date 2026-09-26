@@ -23,7 +23,7 @@ it without initials stay at the normal left margin.
         {% else %}
             {% assign speaker_class = "rt-speaker" %}
         {% endif %}
-        {% capture chip %}<p class="rt-turn" data-speaker="{{ author.initials | downcase }}"><a class="{{ speaker_class }}" href="{{ site.baseurl }}/about#{{ author.name | slugify }}" title="{{ author.name }}">{{ display_name }}</a>{% endcapture %}
+        {% capture chip %}<p class="rt-turn" data-speaker="{{ author.initials | downcase }}"><a class="{{ speaker_class }}" href="{{ site.baseurl }}/about#{{ author.name | slugify }}" title="{{ author.name }}">{{ display_name }}:</a><span class="rt-gap"> </span>{% endcapture %}
         {% capture plain %}<p>{{ author.initials }}: {% endcapture %}
         {% capture bold_colon_in %}<p><strong>{{ author.initials }}:</strong> {% endcapture %}
         {% capture bold_colon_out %}<p><strong>{{ author.initials }}</strong>: {% endcapture %}

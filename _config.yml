@@ -54,7 +54,20 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-sass-converter
+
+# Default social share card (og:image / twitter:image) for every page;
+# a post can override it with its own `image:` front matter.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/images/og-card.png
+        width: 1200
+        height: 630
+        alt: Emergent properties logo
 
 # Show excerpts on the home page
 show_excerpts: false

@@ -18,6 +18,7 @@ group :jekyll_plugins do
   gem "jekyll-remote-theme", "~> 0.4.3"
   gem "jekyll-paginate", "~> 1.1"
   gem "jekyll-sass-converter", "~> 3.0"
+  gem "jekyll-sitemap", "~> 1.4"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
