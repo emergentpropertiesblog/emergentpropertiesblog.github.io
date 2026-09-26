@@ -4,7 +4,7 @@ layout: default
 
 <div class="post">
   <div class="post-info">
-    <span>Written by</span>
+    <span>{% if page.layout == "roundtable" %}Discussion between{% else %}Written by{% endif %}</span>
     {% assign authors = page.author | split: ", " %}
     {% for author_name in authors %}
         {% assign author_key = "" %}
@@ -21,6 +21,18 @@ layout: default
             {{ author_name }}{% unless forloop.last %}, {% endunless %}
         {% endif %}
     {% endfor %}
+
+    {% if page.layout == "roundtable" and page.discussion_leader %}
+      {% for author_entry in site.data.authors %}
+        {% assign author = author_entry[1] %}
+        {% if author.name == page.discussion_leader or author.initials == page.discussion_leader %}
+          <br>
+          <span>Moderated by</span>
+          <a href="{{ site.baseurl }}/about#{{ author.name | slugify }}">{{ author.name }}</a>
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
 
     {% if page.date %}
       <br>

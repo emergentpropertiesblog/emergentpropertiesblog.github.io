@@ -1,0 +1,36 @@
+{% comment %}
+Turns speaker prefixes in a roundtable transcript into styled speaker names.
+A paragraph starting with an author's initials ("RG: ...", "**RG:** ..." or
+"**RG**: ...") gets that author's short name, linked to their bio.
+Initials come from `initials` in _data/authors.yml.
+
+`include.leader` (a name or initials, from `discussion_leader` in the post's
+front matter) marks the discussion leader, whose name is highlighted.
+
+Paragraphs without a prefix continue the previous speaker's turn and get
+`rt-cont`, so they line up with the turn's text. A heading, horizontal rule
+or block quote (e.g. a hypothetical) ends the turn, so it and anything after
+it without initials stay at the normal left margin.
+{% endcomment %}
+{% assign rt_content = include.content %}
+{% for author_entry in site.data.authors %}
+    {% assign author = author_entry[1] %}
+    {% if author.initials %}
+        {% assign first_name = author.name | split: " " | first %}
+        {% assign display_name = author.short_name | default: first_name %}
+        {% if include.leader == author.name or include.leader == author.initials %}
+            {% assign speaker_class = "rt-speaker rt-leader" %}
+        {% else %}
+            {% assign speaker_class = "rt-speaker" %}
+        {% endif %}
+        {% capture chip %}<p class="rt-turn" data-speaker="{{ author.initials | downcase }}"><a class="{{ speaker_class }}" href="{{ site.baseurl }}/about#{{ author.name | slugify }}" title="{{ author.name }}">{{ display_name }}</a>{% endcapture %}
+        {% capture plain %}<p>{{ author.initials }}: {% endcapture %}
+        {% capture bold_colon_in %}<p><strong>{{ author.initials }}:</strong> {% endcapture %}
+        {% capture bold_colon_out %}<p><strong>{{ author.initials }}</strong>: {% endcapture %}
+        {% assign rt_content = rt_content | replace: plain, chip | replace: bold_colon_in, chip | replace: bold_colon_out, chip %}
+    {% endif %}
+{% endfor %}
+{% assign in_turn = false %}
+{% assign pieces = rt_content | split: "<p" %}
+{% capture rt_output %}{% for piece in pieces %}{% if forloop.first %}{{ piece }}{% continue %}{% endif %}{% assign head = piece | slice: 0, 16 %}{% if head == ' class="rt-turn"' %}{% assign in_turn = true %}{% endif %}{% assign first_char = piece | slice: 0 %}{% if in_turn and first_char == ">" %}<p class="rt-cont"{{ piece }}{% else %}<p{{ piece }}{% endif %}{% if piece contains "<h" or piece contains "<blockquote" %}{% assign in_turn = false %}{% endif %}{% endfor %}{% endcapture %}
+{{ rt_output }}
