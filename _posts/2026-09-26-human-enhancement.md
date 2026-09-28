@@ -6,8 +6,8 @@ date: 2026-09-26
 tags: [roundtable, human enhancement, ethics]
 summary_author: Daniel Rubin
 discussion_leader: Daniel Rubin
-description: "What are the ethics of human enhancement? Given the breadth of this question, this is an excerpt of a discussion held between the six of us across topics focusing on the ethics of human enhancement. Although we are certainly not experts on bioethics, we tried to frame the discussion around a series of tractable hypotheticals ranging from medical treatment to permanent augmentation."
-description_email: "What are the ethics of human enhancement? Given the breadth of this question, this is an excerpt of a discussion held between the six of us across topics related to ethics of human enhancement. The goal of this post was to mirror the chat discussions on the old 538 (unfortunately now defunct) “Slack chats,” where they would have informal discussions around specific topics, usually political. Although we are certainly not experts on bioethics, we tried to frame the discussion around a series of tractable hypotheticals rannging from routine medical treatment to permanent augmentation."
+description: "What are the ethics of human enhancement? Given the breadth of this question, this is an excerpt of a discussion held between the six of us addressing this topic. Although we are certainly not experts on bioethics, we tried to frame the discussion around a series of tractable hypotheticals ranging from medical treatment to permanent augmentation."
+description_email: "What are the ethics of human enhancement? Given the breadth of this question, this is an excerpt of a discussion held between the six of us. Although we are certainly not experts on bioethics, we tried to frame the discussion around a series of tractable hypotheticals rannging from routine medical treatment to permanent augmentation. The goal of this post format is to mirror the chat discussions on the old 538 (unfortunately now defunct) “Slack chats,” where they would have informal discussions around specific topics, usually political."
 topline: "A discussion focused on the ethics of varying degrees of human enhancement"
 ---
 
