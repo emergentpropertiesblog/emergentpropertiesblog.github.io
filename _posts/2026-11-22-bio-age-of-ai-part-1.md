@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Biology in the age of AI, part 1"
+title: "Biology in the age of AI #1: where AI is already changing biology"
 author: Kaitavjeet Chowdhary, Rahul Gupta
 date: 2026-11-22
 tags: [AI, models, big data]
