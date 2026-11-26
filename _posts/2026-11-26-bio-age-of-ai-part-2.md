@@ -2,11 +2,16 @@
 layout: post
 title: "Biology in the age of AI #2: how can AI change how we do science?"
 author: Rahul Gupta, Kaitavjeet Chowdhary
-date: 2026-11-25
+date: 2026-11-26
 tags: [AI, metascience]
 summary_author: Kaitavjeet Chowdhary
 description: "Rapid developments in AI stand to transform the nature of work across fields. In Part 2 of our Biology in the Age of AI series, we re-imagine what the future practice of science may look like with AI tools, analyzing where AI may augment the scientific discovery process as well as where it may fall short. In doing so, we examine what it means to do science in the first place."
 topline: "An exploration of the practice of science and how it could change with the advent of AI"
+image:
+  path: /assets/images/post8/part-2-Copernican_heliocentrism_diagram-2.jpg
+  width: 1920
+  height: 1645
+  alt: "Copernicus's heliocentric diagram"
 ---
 
 {% include post_summary.html
@@ -16,9 +21,12 @@ topline: "An exploration of the practice of science and how it could change with
 
 # Do we need humans at all?
 
+![The classic diagram from Copernicus proposing heliocentrism](/assets/images/post8/part-2-Copernican_heliocentrism_diagram-2.jpg){: width="450"}
+*The classic diagram proposing Copernican heliocentrism (De revolutionibus orbium coelestium, 1543).*
+
 Over the past few years, much of our casual conversations with peers has turned to the latest development in LLMs and their deployment[^fn1]. For all but those who are the most intimately involved in the industry, the rate of advancement in the field has been staggering and difficult to follow; just last year we were intermittently using frontier LLMs as a fancy StackExchange, whereas now entire side-projects can be vibe-coded without writing a single line of code.
 
-Turning to biomedical research, we distinctly remember hearing from near-peers ahead of us on the MD-PhD training path telling us that our fields will likely transform while we are "away from the lab" in the period between our return to the clinic post-PhD and the end of our clinical training[^fn2]. For those who had completed their PhDs in molecular biology in the early 2010s, they returned, after clinical training, to a scientific world transformed by CRISPR. Many had spent huge amounts of time learning intricate protein engineering techniques[^fn3] for knocking out genes in cell lines, or resorted to powerful yet imperfect techniques such as interfering RNAs. CRISPR made it shockingly easy to generate entire libraries of total knock-outs, leading to the rise of the genome-wide CRISPR screen [[1]](#ref1)[[2]](#ref2), changing how many ask scientific questions. We completed our PhDs in 2022-2024 -- what was going to be our version of this? **It seems likely that it is the use of modern AI in the scientific pipeline.**
+Turning to biomedical research, we distinctly remember hearing from near-peers ahead of us on the MD-PhD training path telling us that our fields will likely transform while we are "away from the lab" in the period between our return to the clinic post-PhD and the end of our clinical training[^fn2]. For those who had completed their PhDs in molecular biology in the early 2010s, they returned, after clinical training, to a scientific world transformed by CRISPR. Many had spent huge amounts of time learning intricate protein engineering techniques[^fn3] for knocking out genes in cell lines, or resorted to powerful yet imperfect techniques such as interfering RNAs. CRISPR made it shockingly easy to generate entire libraries of total knock-outs, leading to the rise of the genome-wide CRISPR screen [[1]](#ref1)[[2]](#ref2), changing how many ask scientific questions. We completed our PhDs in 2022-2024 -- what was going to be our version of this? It seems likely that it is the use of modern AI in the scientific pipeline.
 
 There have been many comparisons of modern AI to periods of sea change in technology, such as the industrial revolution [[3]](#ref3); others, however, have pointed to how despite the billions in AI investment, there has been little change to many day-to-day realities for many in the economy. Despite the fact that advances in AI are extensively discussed in our media environment, many colleagues involved in cutting-edge research have sworn off AI as a novelty unlikely to be substantially useful in research, highlighting limitations such as hallucinations.
 
@@ -98,7 +106,7 @@ For instance, below is a screenshot from the OpenAI post on GeneBench-Pro:
 
 ![Screenshot from the OpenAI post on GeneBench-Pro](/assets/images/post8/part-2-genebench-screenshot.png)
 
-What level of confidence needs to be had in an LLM to accept an analytical decision that you yourself are not familiar with? And moreover, to what extent may an LLM shift its analytical decision-making based on the desired result of the researcher querying the system?
+It struck us that the inappropriate output from GPT-5.5 could appear reasonable to those without the appropriate expertise. What level of confidence needs to be had in an LLM to accept an analytical decision that you yourself are not familiar with? And moreover, to what extent may an LLM shift its analytical decision-making based on the desired result of the researcher querying the system?
 
 From an experimental perspective, using AI for biological methods development likely suffers from the same taste-related pitfalls that we discussed in part (a), and the bespoke nature of experimental methods development inherently implies that there may not be sufficient data upon which an AI model can draw from when proposing new approaches. However, it is possible that the various AI scaling laws apply here as well and with sufficient training data and compute cycles the models can begin to "apply" insights from existing experimental protocols to novel situations. Once a protocol is established, AI is limited by the requirement of a robotics platform to implement it. Given the practice required for humans to gain proficiency in bench-based techniques, we wonder if the relative value-add of using AI to command human experimentalists is rather limited.
 
