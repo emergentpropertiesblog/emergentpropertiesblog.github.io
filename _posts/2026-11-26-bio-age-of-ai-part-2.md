@@ -21,7 +21,7 @@ image:
 
 # Do we need humans at all?
 
-![The classic diagram from Copernicus proposing heliocentrism](/assets/images/post8/part-2-Copernican_heliocentrism_diagram-2.jpg){: width="450"}
+![The classic diagram from Copernicus proposing heliocentrism](/assets/images/post8/part-2-Copernican_heliocentrism_diagram-2.jpg){: width="600"}
 *The classic diagram proposing Copernican heliocentrism (De revolutionibus orbium coelestium, 1543).*
 
 Over the past few years, much of our casual conversations with peers has turned to the latest development in LLMs and their deployment[^fn1]. For all but those who are the most intimately involved in the industry, the rate of advancement in the field has been staggering and difficult to follow; just last year we were intermittently using frontier LLMs as a fancy StackExchange, whereas now entire side-projects can be vibe-coded without writing a single line of code.
